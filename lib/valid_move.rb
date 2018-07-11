@@ -6,7 +6,7 @@ def position_taken?(board, index)
   board[index] != ''
 end
 
-def valid_move?(board, index) 
+def valid_movee?(board, index) 
   if index >= 9 
   	false 
   elsif position_taken?(board, index) 
@@ -15,5 +15,10 @@ def valid_move?(board, index)
   	true 
   else board[index] != “X” || board[index] != “O” 
   	true 
-   end 
+  end 
+end
+
+
+def valid_move?(board, index)
+  index.between?(0,8) && !position_taken?(board, index)
 end
