@@ -21,6 +21,6 @@ end
 
 
 def valid_move?(board, index)
-  binding.pry
+  #binding.pry
   index.between?(0,8) && !position_taken?(board, index)
 end
