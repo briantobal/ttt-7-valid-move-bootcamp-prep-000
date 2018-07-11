@@ -3,7 +3,7 @@ def position_empty?(board, index)
 end
 
 def position_taken?(board, index)
-  board[index] != ' '
+  !position_empty?(board, index)
 end
 
 def valid_move?(board, index)
