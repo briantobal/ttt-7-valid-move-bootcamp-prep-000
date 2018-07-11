@@ -1,4 +1,5 @@
-def position_empty?
+def position_empty?(board, index)
+  board[index] == ' '
 end
 
 def position_taken?(board, index)
