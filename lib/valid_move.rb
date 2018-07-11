@@ -4,7 +4,7 @@
 require 'pry'
 def position_taken?(board, index)
   binding.pry
-  board[index] != ''
+  board[index] != ' '
 end
 
 def valid_movee?(board, index) 
